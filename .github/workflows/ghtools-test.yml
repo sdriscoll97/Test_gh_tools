@@ -9,4 +9,4 @@ jobs:
   echo:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "gh-tools dispatch test: ${{ inputs.note }}"
+      - run: 'echo "gh-tools dispatch test - ${{ inputs.note }}"'
