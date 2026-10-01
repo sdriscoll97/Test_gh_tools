@@ -1,0 +1,12 @@
+name: ghtools-test
+on:
+  workflow_dispatch:
+    inputs:
+      note:
+        description: Test input
+        default: hello
+jobs:
+  echo:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "gh-tools dispatch test: ${{ inputs.note }}"
